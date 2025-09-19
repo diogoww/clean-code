@@ -8,11 +8,11 @@ class PlaylistCreatorController:
             playlist = self.__create_playlist(musics)
             return self.__format_response(playlist)
         except Exception as exception:
-            self.__format_error_response(exception)
+            return self.__format_error_response(exception)
     
     def __get_all_musics_and_verify(self) -> list:
         musics = musics_repository.get_all_songs()
-        if musics is []:
+        if musics == []:
             raise Exception("Nenhuma musica cadastrada!")
         
         return musics
