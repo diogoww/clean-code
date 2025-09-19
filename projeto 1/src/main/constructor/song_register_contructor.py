@@ -1,9 +1,6 @@
 from src.view.song_register_view import SongRegisterView
 from src.controllers.song_register_controller import SongRegisterController
 
-# SongRegisterView -> Pascal Case (Classes)
-# song_register_view -> Snake Case (Funções, métodos, variaveis)
-
 
 def song_register_process():
     song_register_view = SongRegisterView()
