@@ -1,6 +1,6 @@
 from src.models.entities.music import Music
 
-class MusicsRepository:
+class __MusicsRepository:
     def __init__(self):
         self.__music_list = []
     
@@ -14,3 +14,5 @@ class MusicsRepository:
     
     def get_all_songs(self) -> list:
         return self.__music_list
+    
+musics_repository = __MusicsRepository()
